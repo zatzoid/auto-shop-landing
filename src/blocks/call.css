@@ -1,0 +1,137 @@
+.call {
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    margin-top: 80px;
+}
+
+.call__img {
+    object-fit: contain;
+    object-position: top;
+    width: 100%;
+/*  transform: scale(1.5); */
+    position: absolute;
+    z-index: 1;
+
+    
+
+}
+
+.call__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.call__content-head {
+    font-family: TT TANK;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    position: relative;
+    z-index: 5;
+    max-width: 354px;
+    margin-bottom: 14px;
+
+}
+
+.call__content-body {
+    font-family: TT TANK;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 19.8px;
+    text-align: left;
+    position: relative;
+    z-index: 5;
+}
+
+.call__content-form {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-auto-rows: auto;
+    gap: 24px;
+    position: relative;
+    z-index: 5;
+}
+
+.call__content-form label {
+    
+}
+
+.call__content-form-input {
+
+   
+
+}
+
+.call__content-form-checkbox {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.call__content-form-checkbox input {
+    width: fit-content;
+
+}
+
+.call__content-form-checkbox-label {
+    font-family: TT TANK;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 13.2px;
+    text-align: left;
+    color: var(--col-white);
+}
+
+.call__content-form-btn {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+    .call {
+        height: 520px;
+    }
+
+    .call__img {
+        height: auto;
+        width: 100%;
+   /*     transform: translateX(-30%); */
+       /* scale: 2; */
+    }
+
+    .call__content {
+        justify-content: flex-start;
+    }
+
+    .call__content-head {
+        font-size: 28px;
+        line-height: 30.8px;
+    }
+
+    .call__content-body {
+        font-size: 18px;
+        line-height: 19.8px;
+
+    }
+
+    .call__content-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .call__content-form-input{
+        width: 100%;
+    }
+    .call__content-form-btn{
+        width: 100% !important;
+        justify-content: center;
+
+    }
+}

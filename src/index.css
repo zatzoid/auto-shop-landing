@@ -1,0 +1,171 @@
+@import './fonts/fonts.css';
+@import '../node_modules/normalizecss/normalize.css';
+@import './blocks/header.css';
+@import './blocks/heading.css';
+@import './blocks/duration.css';
+@import './blocks/advantages.css';
+@import './blocks/commercial.css';
+@import './blocks/preview.css';
+@import './blocks/selection.css';
+@import './blocks/tradeIn.css';
+@import './blocks/call.css';
+@import './blocks/offer.css';
+@import './blocks/map.css';
+@import './blocks/disclaimer.css';
+@import './blocks/modal.css';
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    --col-white: #FFFFFF;
+    --col-black: #181818;
+    --col-black-light: #1C2121;
+    --col-black-lighter: #252C2C;
+    --col-grey: #939697;
+    --col-orange: #FF9549;
+    --col-orange-hover: #FE8630;
+    --col-black-hover: #383838;
+    --col-green: #00D154;
+    --col-red: #FF2B00;
+    --max-width: 1300px;
+    background-color: var(--col-black);
+    color: var(--col-white);
+
+}
+.blockScroll{
+    overflow: hidden;
+}
+
+main section {
+    
+
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
+.btn-orange,
+.btn-black {
+
+    transition: all .2s;
+    font-family: TT TANK;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15.4px;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 13.5px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.btn-orange {
+    background-color: var(--col-orange);
+    color: var(--col-black);
+}
+
+.btn-black {
+    background-color: transparent;
+    color: var(--col-white);
+    border: 1px solid var(--col-orange);
+}
+
+.btn-orange:hover {
+    background-color: var(--col-orange-hover);
+    gap: 15px;
+}
+
+.btn-black:hover {
+    background-color: var(--col-black-hover);
+    gap: 15px;
+}
+
+p, h1,h2,h3,h4,h5,h6,a{
+    margin: 0;
+    text-decoration: none;
+}
+
+.select {
+    max-width: 100%;
+}
+
+.select-name {
+    font-family: TT TANK;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 15.4px;
+    text-align: left;
+    color: var(--col-grey);
+    margin-bottom: 8px;
+}
+
+.select select {
+    background-color: var(--col-black-lighter);
+    border: 1px solid var(--col-grey);
+    padding: 16px 20px;
+    color: var(--col-white);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    font-family: TT TANK;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15.4px;
+    text-align: left;
+    cursor: pointer;
+    transition: all .5s;
+}
+.select select:focus{
+    outline: none;
+    border-color: var(--col-white);
+}
+
+.label-input-text{
+    font-family: TT TANK;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 15.4px;
+    text-align: left;
+    color: var(--col-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-text{
+    padding: 14px 20px 14px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--col-grey);
+    background-color: var(--col-black-lighter);
+    color: var(--col-white);
+    width: 300px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+    .container{
+        padding: 60px 15px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        padding: 20px 15px; 
+    }
+    
+}

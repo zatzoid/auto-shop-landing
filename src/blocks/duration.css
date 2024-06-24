@@ -1,0 +1,120 @@
+.duration {}
+
+.duration__content {
+    margin-top: 20px !important;
+    background-color: var(--col-black-lighter);
+    border-radius: 10px;
+    padding: 20px 40px !important;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+
+
+.duration__content-head {
+    font-family: TT TANK;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: left;
+    max-width: 320px;
+
+}
+
+.duration__content-timer {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.duration__content-timer-dot {
+
+    font-family: TT TANK;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 49.14px;
+
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.duration__content-timer-data {
+    position: relative;
+
+}
+
+.duration__content-timer-data-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min-content;
+    font-family: TT TANK;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 13.2px;
+    text-align: center;
+
+
+}
+
+.duration__content-timer-data-text span {
+    font-family: TT TANK;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42.84px;
+
+
+}
+@media screen and (max-width: 1000px){
+    .duration__content {
+        flex-wrap: wrap;
+        margin: 20px 15px 0 !important;
+    }
+    .duration__btn{
+        width: 100% !important;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .duration__content {
+        flex-direction: column;
+        padding: 20px 15px !important;
+        margin: 20px 15px 0 !important;
+    }
+
+    .duration__content-timer-data canvas {
+        width: 60px;
+        height: 60px;
+    }
+
+    .duration__content-timer {
+        gap: 5px;
+    }
+
+    .duration__content-timer-dot {
+        font-size: 16px;
+        line-height: 20.16px;
+    }
+
+    .duration__content-timer-data-text {
+        font-size: 10px;
+        line-height: 11px;
+
+    }
+
+    .duration__content-timer-data-text span {
+        font-size: 24px;
+        line-height: 30.24px;
+    }
+
+    .duration__content-head {
+        font-size: 28px;
+        line-height: 30.8px;
+    }
+}

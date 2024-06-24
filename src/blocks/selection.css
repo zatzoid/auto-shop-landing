@@ -1,0 +1,215 @@
+.selection__content-head {
+    font-family: TT TANK;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+
+}
+
+.selection__content-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 416px));
+    grid-auto-rows: auto;
+    gap: 24px;
+    margin: 40px 0;
+
+}
+
+.selection__content-option {
+   
+}
+
+.selection__content-option-name {
+   
+}
+
+.selection__content-option select {
+   
+}
+
+
+
+.selection__cards {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    transition: all .5s;
+}
+
+.selection__card {
+    width: 100%;
+    min-height: 237px;
+    display: grid;
+    grid-template-columns: auto 2fr 1.5fr;
+    grid-template-rows: 1.9fr 1fr 1fr;
+    border: 1px solid var(--col-grey);
+    border-radius: 8px;
+    box-sizing: border-box;
+
+
+}
+
+.selection__card-img {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    max-width: 416px;
+    display: flex;
+}
+
+.selection__card-img img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.selection__card-heading {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.selection__card-heading-head {
+    font-family: TT TANK;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: left;
+    text-transform: uppercase;
+
+
+}
+
+.selection__card-heading-body {
+    font-family: TT TANK;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 19.8px;
+    text-align: left;
+    color: var(--col-grey);
+}
+
+.selection__card-price {
+    font-family: TT TANK;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: left;
+    grid-column: 2;
+
+
+}
+
+.selection__card-adv {
+    grid-column: 2 / span 3;
+    grid-row: 3;
+    display: flex;
+    gap: 24px;
+}
+
+.selection__card-adv-text {
+    display: flex;
+    gap: 12px;
+    font-family: TT TANK;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    text-align: left;
+
+}
+
+.selection__btns {
+    margin-top: 35px;
+    margin-right: 24px;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.selection__card-btn {
+    width: 100% !important;
+    justify-content: center;
+}
+
+.selection__button {
+    margin: auto;
+    padding: 16.5px 30px;
+    border: 1px solid var(--col-white);
+    background-color: transparent;
+    font-family: TT TANK;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15.4px;
+    text-align: left;
+    display: flex;
+    border-radius: 8px;
+    transition: opacity .2s;
+    cursor: pointer;
+
+}
+.selection__button:hover{
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+    .selection__content {
+        padding-top: 80px !important;
+    }
+
+    .selection__content-head {
+        font-size: 28px;
+        line-height: 30.8px;
+
+    }
+
+    .selection__card {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content;
+        gap: 24px;
+        padding: 0 15px 15px 15px;
+        box-sizing: border-box;
+    }
+
+    .selection__card-img {
+        grid-row: 1;
+    }
+
+    .selection__card-heading {
+        margin: 0;
+    }
+
+    .selection__card-price {
+        grid-column: 1;
+    }
+
+    .selection__card-adv {
+        grid-column: 1;
+        grid-row: 4;
+        flex-direction: column;
+    }
+
+    .selection__btns {
+        grid-column: 1;
+        grid-row: 5;
+        margin: 0;
+    }
+
+    .selection__card-adv-text {
+        font-size: 16px;
+        line-height: 17.6px;
+        gap: 3px;
+
+    }
+
+    .selection__card-adv-text svg {
+        width: 24px;
+        height: 24px;
+    }
+}

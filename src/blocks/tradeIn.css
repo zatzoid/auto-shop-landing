@@ -1,0 +1,59 @@
+.tradeIn {}
+
+.tradeIn__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+}
+
+.tradeIn__content-img {
+    grid-row: 1/ span 2;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.tradeIn__content-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.tradeIn__content-text {
+    font-family: TT TANK;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    align-self: flex-end;
+
+}
+
+.tradeIn__content-btn {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .tradeIn__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tradeIn__content-text {
+        font-size: 28px;
+        line-height: 30.8px;
+
+    }
+    .tradeIn__content-btn{
+        width: 100% !important;
+        justify-content: center;
+    }
+}

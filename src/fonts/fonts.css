@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'TT TANK';
+    src: url('./TT-TANK-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Подключение шрифта TT-TANK-Light */
+@font-face {
+    font-family: 'TT TANK';
+    src: url('./TT-TANK-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Подключение шрифта TT-TANK-Medium */
+@font-face {
+    font-family: 'TT TANK';
+    src: url('./TT-TANK-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

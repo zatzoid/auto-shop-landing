@@ -1,0 +1,87 @@
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.95);
+    opacity: 0;
+    transition: all .5s;
+    transform: translateX(100%);
+}
+
+.modal_open {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.modal__content {
+    padding: 40px 27px;
+    position: relative;
+    background-color: var(--col-black-light);
+    border-radius: 8px;
+    max-width: 350px;
+}
+
+.modal__content-closeBtn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    background-image: url(../assets/ui/x.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+.modal__content-head {
+    font-family: TT TANK;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+
+}
+
+.modal__content-body {
+    font-family: TT TANK;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin: 16px 0 39px;
+}
+
+.modal__content-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.modal__content-form-phone {
+    width: 100%;
+}
+
+.modal__content-form-phone input {
+    width: 100%;
+}
+
+.modal__content-form-select {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.modal__content-form-select:first-of-type {
+    max-height: 200px;
+}
+
+.modal__content-form-select select {
+    color: var(--col-grey) !important;
+}

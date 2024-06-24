@@ -1,0 +1,59 @@
+.commercial__content {}
+
+.container {}
+
+.commercial__heading {
+    font-family: TT TANK;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.comercial__links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+.comercial__links a {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-family: TT TANK;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    text-align: center;
+    color: var(--col-white);
+    transition: all .2s;
+}
+
+.comercial__links a:hover {
+    opacity: 0.7;
+}
+
+.comercial__links a img {
+    width: 196px;
+    height: 111px;
+}
+
+@media screen and (max-width: 800px) {
+    .commercial__heading {
+        font-size: 28px;
+        line-height: 30.8px;
+
+    }
+    .comercial__links a{
+        width: 140px;
+        height: 80px;
+    }
+    .comercial__links a img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

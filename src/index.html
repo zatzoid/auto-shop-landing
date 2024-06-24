@@ -383,8 +383,8 @@
                             </label>
                             <label class="preview__img-color-label" id="color-grey300" for="grey300">
 
-                                <input type="radio" name="color300" value="grey" id="grey300"
-                                    class="preview-img__color" aria-label="chage color to grey">
+                                <input type="radio" name="color300" value="grey" id="grey300" class="preview-img__color"
+                                    aria-label="chage color to grey">
                                 <div class="preview__img-color-label-checked"></div>
                             </label>
                             <label class="preview__img-color-label" id="color-black300" for="black300">
@@ -523,7 +523,7 @@
             </div>
             <div class="preview__content container">
                 <div class="previewTop">
-                    <div class="preview__img">
+                    <div class="preview__img" id="t500Preview-img">
 
 
                         <div class="preview__img-colors">
@@ -534,7 +534,7 @@
                                     class="preview-img__color" aria-label="chage color to grey1">
                                 <div class="preview__img-color-label-checked"></div>
                             </label>
-                            <label class="preview__img-color-label" id="color-grey2500"  for="grey2500">
+                            <label class="preview__img-color-label" id="color-grey2500" for="grey2500">
 
                                 <input type="radio" name="color500" value="grey2" id="grey2500"
                                     class="preview-img__color" aria-label="chage color to grey2">
@@ -554,7 +554,8 @@
                             </label>
 
                         </div>
-                        <img src="<%=require('/src/assets/t500/grey1.png')%>" class="preview__img-data" alt="t500">
+
+                        <img  class="preview__img-data"  src="<%=require('/src/assets/t500/grey1.png')%>" alt="t500">
                     </div>
                     <div class="preview__data">
 
@@ -715,7 +716,8 @@
                         </select>
                     </div>
                     <div class="selection__content-option select">
-                        <label class="selection__content-option-name select-name" for="select-300-equipment">Комплектация</label>
+                        <label class="selection__content-option-name select-name"
+                            for="select-300-equipment">Комплектация</label>
                         <select name="equipment" id="select-300-equipment" aria-label="select equpment">
                             <option value="" disabled="disabled" selected="selected" hidden=""></option>
                             <option value="full">Full</option>
@@ -723,7 +725,8 @@
                         </select>
                     </div>
                     <div class="selection__content-option select">
-                        <label class="selection__content-option-name select-name" for="select-300-engine">Двигатель</label>
+                        <label class="selection__content-option-name select-name"
+                            for="select-300-engine">Двигатель</label>
                         <select name="engine" id="select-300-engine" aria-label="select engine">
                             <option value="" disabled="disabled" selected="selected" hidden=""></option>
                             <option value="2.0">2.0</option>
@@ -762,7 +765,7 @@
             <!--   -->
             <picture>
                 <source class="call__img" media="(min-width:801px )" type="image/webp"
-                    srcset="<%=require('/src/assets/call-mobile.webp')%>" loading="lazy">
+                    srcset="<%=require('/src/assets/call.webp')%>" loading="lazy">
                 <source class="call__img" media="(max-width:800px )" type="image/webp"
                     srcset="<%=require('/src/assets/call-mobile.webp')%>" loading="lazy">
                 <source class="call__img" media="(max-width:800px )" type="image/png"
@@ -800,10 +803,8 @@
                     для корпоративных клиентов</h2>
                 <div class="offer__content-woman">
                     <picture class="offer__content-woman-img">
-                        <source  type="image/webp" srcset="<%=require('/src/assets/offer.webp')%>"
-                            loading="lazy">
-                        <img  src="<%=require('/src/assets/offer.png')%>" loading="lazy"
-                            alt="woman">
+                        <source type="image/webp" srcset="<%=require('/src/assets/offer.webp')%>" loading="lazy">
+                        <img src="<%=require('/src/assets/offer.png')%>" loading="lazy" alt="woman">
 
                     </picture>
 
@@ -827,12 +828,12 @@
         </section>
         <section class="map" id="map">
             <div class="map__content container">
-                <p>тут карта</p>
-                <!-- <iframe
+
+                <iframe
                     src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.620941%2C55.753575&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIwNjMzMDI1EjnQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JrRgNCw0YHQvdCw0Y8g0L_Qu9C-0YnQsNC00YwiCg0dfBZCFaIDX0I%2C&z=17.55"
                     width="100%" height="100%" frameborder="1" allowfullscreen="true"
                     style="position:relative;"></iframe>
- -->
+
                 <div class="map__content-infos">
                     <div class="map__content-info">
                         <p class="map__content-info-head">Адрес</p>

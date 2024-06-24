@@ -9,6 +9,7 @@ import './scripts/modal.js';
 import './scripts/api.js';
 import './scripts/slider.js';
 import './scripts/joke.js';
+import './scripts/map.js';
 
 
 

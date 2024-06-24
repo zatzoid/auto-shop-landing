@@ -80,5 +80,5 @@ class Modal {
 
 }
 
-const modal = new Modal('.modal', '#modalBtn', '.selection__cards')
+const modal = new Modal('.modal', '.open-modal-btn', '.selection__cards')
 modal.activateModal()

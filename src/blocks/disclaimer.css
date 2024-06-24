@@ -57,10 +57,3 @@
 .disclaimer__content-input:checked~.disclaimer__content-text {
     max-height: 100vh;
 }
-
-@media screen and (max-width: 800px) {
-   
-    .disclaimer{
-        margin-top: 250px;
-    }
-}

@@ -209,6 +209,7 @@
     background-size: 13px 9px;
     background-repeat: no-repeat;
     opacity: 0;
+    display: block;
 }
 
 .preview__img-color-label input:checked+.preview__img-color-label-checked {

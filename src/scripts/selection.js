@@ -159,11 +159,11 @@ class Selection {
                             </p>
                         </div>
                         <div class="selection__btns">
-                            <button class="selection__card-btn btn-orange" id='modalBtn'>
+                            <button class="selection__card-btn btn-orange open-modal-btn" >
                                 Получить предложение
                                 <img src="${arrowBlackSvg}" alt="arrow">
                             </button>
-                            <button class="selection__card-btn btn-black" id='modalBtn'>
+                            <button class="selection__card-btn btn-black open-modal-btn" >
                                 Тест-драйв
                                 <img src="${arrowWhiteSvg}" alt="arrow">
                             </button>

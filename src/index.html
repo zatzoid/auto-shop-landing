@@ -23,25 +23,25 @@
                     <p class="modal__content-form-select-name select-name">Модель</p>
                     <select name="model" id="select-model">
                         <option value="" disabled="disabled" selected="selected" hidden="">любая</option>
-                        <option value="t300" id="option-model">T300</option>
-                        <option value="t500" id="option-model">T500</option>
+                        <option value="t300">T300</option>
+                        <option value="t500">T500</option>
                     </select>
                 </div>
                 <div class="modal__content-form-select select">
                     <p class="modal__content-form-select-name select-name">Комплектация</p>
                     <select name="equipment" id="select-equipment">
                         <option value="" disabled="disabled" selected="selected" hidden="">любая</option>
-                        <option value="full" id="option-equipment">Full</option>
-                        <option value="notFull" id="option-equipment">Not full</option>
+                        <option value="full">Full</option>
+                        <option value="notFull">Not full</option>
                     </select>
                 </div>
                 <div class="modal__content-form-select select">
                     <p class="modal__content-form-select-name select-name">Двигатель</p>
                     <select name="engine" id="select-engine">
                         <option value="" disabled="disabled" selected="selected" hidden="">любой</option>
-                        <option value="2.0" id="option-engine">2.0</option>
-                        <option value="2.5" id="option-engine">2.5</option>
-                        <option value="3.5" id="option-engine">3.5</option>
+                        <option value="2.0">2.0</option>
+                        <option value="2.5">2.5</option>
+                        <option value="3.5">3.5</option>
                     </select>
                 </div>
                 <label class="modal__content-form-phone label-input-text">
@@ -217,7 +217,7 @@
                 <p class="heading__content-body">Улучшим любые условия</p>
                 <h1 class="heading__content-head">TANK 500</h1>
                 <p class="heading__content-body">Осталось всего 5 автомобилей!</p>
-                <button class="heading__content-btn btn-orange" id="modalBtn">
+                <button class="heading__content-btn btn-orange open-modal-btn">
                     Получить предложение
                     <img src="<%=require('/src/assets/ui/arrow-small-black.svg')%>" alt="arrow">
                 </button>
@@ -230,26 +230,26 @@
                 <div class="duration__content-timer">
                     <div class="duration__content-timer-data">
                         <p class="duration__content-timer-data-text"><span id="durationDaysCount"></span> дней</p>
-                        <canvas id="durationDays" width="90px" height="90px"></canvas>
+                        <canvas id="durationDays" width="90" height="90"></canvas>
                     </div>
                     <span class="duration__content-timer-dot">:</span>
                     <div class="duration__content-timer-data">
                         <p class="duration__content-timer-data-text"><span id="durationHoursCount"></span> часов</p>
-                        <canvas id="durationHours" width="90px" height="90px"></canvas>
+                        <canvas id="durationHours" width="90" height="90"></canvas>
                     </div>
                     <span class="duration__content-timer-dot">:</span>
                     <div class="duration__content-timer-data">
                         <p class="duration__content-timer-data-text"><span id="durationMinutesCount"></span> минут</p>
-                        <canvas id="durationMinutes" width="90px" height="90px"></canvas>
+                        <canvas id="durationMinutes" width="90" height="90"></canvas>
                     </div>
                     <span class="duration__content-timer-dot">:</span>
                     <div class="duration__content-timer-data">
                         <p class="duration__content-timer-data-text"><span id="durationSecondsCount"></span> секунд</p>
-                        <canvas id="durationSeconds" width="90px" height="90px"></canvas>
+                        <canvas id="durationSeconds" width="90" height="90"></canvas>
                     </div>
 
                 </div>
-                <button class="duration__btn btn-orange" id="modalBtn">Узнать цену с выгодами
+                <button class="duration__btn btn-orange open-modal-btn">Узнать цену с выгодами
                     <img src="<%=require('/src/assets/ui/arrow-small-black.svg')%>" alt="arrow">
                 </button>
             </div>
@@ -313,7 +313,7 @@
 
             <div class="preview__overview">
                 <div class="preview__overview-content">
-                    <button class="preview__overview-content-btn" id="overviewClose">
+                    <button class="preview__overview-content-btn overviewClose">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13 1L1 13M1 1L13 13" stroke="white" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" />
@@ -326,8 +326,6 @@
             <div class="preview__content container">
                 <div class="previewTop">
                     <div class="preview__data">
-
-
                         <p class="preview__data-only">Только в AUTOSHOP!</p>
                         <h2 class="preview__data-name">TANK 300</h2>
                         <p class="preview__data-text">Выгода по Trade-In
@@ -350,15 +348,15 @@
                             </svg>
                         </div>
 
-                        <button class="preview__data-btn btn-orange" id="modalBtn" data-model="t300">
+                        <button class="preview__data-btn btn-orange open-modal-btn" data-model="t300">
                             Узнать стоимость по акции
                             <img src="<%=require('/src/assets/ui/arrow-small-black.svg')%>" alt="arrow">
                         </button>
-                        <button class="preview__data-btn btn-black" id="modalBtn" data-model="t300">
+                        <button class="preview__data-btn btn-black open-modal-btn" data-model="t300">
                             Тест-драйв
                             <img src="<%=require('/src/assets/ui/arrow-small-white.svg')%>" alt="arrow">
                         </button>
-                        <button class="preview__data-btn btn-black" id="modalBtn" data-model="t300">
+                        <button class="preview__data-btn btn-black open-modal-btn" data-model="t300">
                             Рассчитать кредит
                             <img src="<%=require('/src/assets/ui/arrow-small-white.svg')%>" alt="arrow">
                         </button>
@@ -373,31 +371,32 @@
 
                                 <input type="radio" name="color300" value="red" checked id="red300"
                                     class="preview-img__color" aria-label="chage color to red">
-                                <div class="preview__img-color-label-checked"></div>
+
+                                <span class="preview__img-color-label-checked"></span>
                             </label>
                             <label class="preview__img-color-label" id="color-orange300" for="orange300">
 
                                 <input type="radio" name="color300" value="orange" id="orange300"
                                     class="preview-img__color" aria-label="chage color to orange">
-                                <div class="preview__img-color-label-checked"></div>
+                                <span class="preview__img-color-label-checked"></span>
                             </label>
                             <label class="preview__img-color-label" id="color-grey300" for="grey300">
 
                                 <input type="radio" name="color300" value="grey" id="grey300" class="preview-img__color"
                                     aria-label="chage color to grey">
-                                <div class="preview__img-color-label-checked"></div>
+                                <span class="preview__img-color-label-checked"></span>
                             </label>
                             <label class="preview__img-color-label" id="color-black300" for="black300">
 
                                 <input type="radio" name="color300" value="black" id="black300"
                                     class="preview-img__color" aria-label="chage color to black">
-                                <div class="preview__img-color-label-checked"></div>
+                                <span class="preview__img-color-label-checked"></span>
                             </label>
                             <label class="preview__img-color-label" id="color-white300" for="white300">
 
                                 <input type="radio" name="color300" value="white" id="white300"
                                     class="preview-img__color" aria-label="chage color to white">
-                                <div class="preview__img-color-label-checked"></div>
+                                <span class="preview__img-color-label-checked"></span>
                             </label>
                         </div>
                     </div>
@@ -458,9 +457,7 @@
                     <ul class="preview__gallery">
                         <li class="preview__gallery-item">
                             <picture>
-                                <source class="preview__gallery-img" type="image/webp"
-                                    srcset="<%=require('/src/assets/t300/preview1.webp')%>" data-index="preview1"
-                                    alt="300">
+                                <source type="image/webp" srcset="<%=require('/src/assets/t300/preview1.webp')%>">
                                 <img class="preview__gallery-img" src="<%=require('/src/assets/t300/preview1.png')%>"
                                     data-index="preview1" alt="300" loading="lazy">
                             </picture>
@@ -468,36 +465,28 @@
                         </li>
                         <li class="preview__gallery-item">
                             <picture>
-                                <source class="preview__gallery-img" type="image/webp"
-                                    srcset="<%=require('/src/assets/t300/preview2.webp')%>" data-index="preview2"
-                                    alt="300">
+                                <source type="image/webp" srcset="<%=require('/src/assets/t300/preview2.webp')%>">
                                 <img class="preview__gallery-img" src="<%=require('/src/assets/t300/preview2.png')%>"
                                     data-index="preview2" alt="300" loading="lazy">
                             </picture>
                         </li>
                         <li class="preview__gallery-item">
                             <picture>
-                                <source class="preview__gallery-img" type="image/webp"
-                                    srcset="<%=require('/src/assets/t300/preview3.webp')%>" data-index="preview3"
-                                    alt="300">
+                                <source type="image/webp" srcset="<%=require('/src/assets/t300/preview3.webp')%>">
                                 <img class="preview__gallery-img" src="<%=require('/src/assets/t300/preview3.png')%>"
                                     data-index="preview3" alt="300" loading="lazy">
                             </picture>
                         </li>
                         <li class="preview__gallery-item">
                             <picture>
-                                <source class="preview__gallery-img" type="image/webp"
-                                    srcset="<%=require('/src/assets/t300/preview4.webp')%>" data-index="preview4"
-                                    alt="300">
+                                <source type="image/webp" srcset="<%=require('/src/assets/t300/preview4.webp')%>">
                                 <img class="preview__gallery-img" src="<%=require('/src/assets/t300/preview4.png')%>"
                                     data-index="preview4" alt="300" loading="lazy">
                             </picture>
                         </li>
                         <li class="preview__gallery-item">
                             <picture>
-                                <source class="preview__gallery-img" type="image/webp"
-                                    srcset="<%=require('/src/assets/t300/preview5.webp')%>" data-index="preview5"
-                                    alt="300">
+                                <source type="image/webp" srcset="<%=require('/src/assets/t300/preview5.webp')%>">
                                 <img class="preview__gallery-img" src="<%=require('/src/assets/t300/preview5.png')%>"
                                     data-index="preview5" alt="300" loading="lazy">
                             </picture>
@@ -511,7 +500,7 @@
 
             <div class="preview__overview">
                 <div class="preview__overview-content">
-                    <button class="preview__overview-content-btn" id="overviewClose">
+                    <button class="preview__overview-content-btn overviewClose">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13 1L1 13M1 1L13 13" stroke="white" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" />
@@ -532,30 +521,30 @@
 
                                 <input type="radio" name="color500" value="grey1" checked id="grey1500"
                                     class="preview-img__color" aria-label="chage color to grey1">
-                                <div class="preview__img-color-label-checked"></div>
+                                <span class="preview__img-color-label-checked"></span>
                             </label>
                             <label class="preview__img-color-label" id="color-grey2500" for="grey2500">
 
                                 <input type="radio" name="color500" value="grey2" id="grey2500"
                                     class="preview-img__color" aria-label="chage color to grey2">
-                                <div class="preview__img-color-label-checked"></div>
+                                <span class="preview__img-color-label-checked"></span>
                             </label>
                             <label class="preview__img-color-label" id="color-grey3500" for="grey3500">
 
                                 <input type="radio" name="color500" value="grey3" id="grey3500"
                                     class="preview-img__color" aria-label="chage color to grey3">
-                                <div class="preview__img-color-label-checked"></div>
+                                <span class="preview__img-color-label-checked"></span>
                             </label>
                             <label class="preview__img-color-label" id="color-black500" for="black500">
 
                                 <input type="radio" name="color500" value="black" id="black500"
                                     class="preview-img__color" aria-label="chage color to black">
-                                <div class="preview__img-color-label-checked"></div>
+                                <span class="preview__img-color-label-checked"></span>
                             </label>
 
                         </div>
 
-                        <img  class="preview__img-data"  src="<%=require('/src/assets/t500/grey1.png')%>" alt="t500">
+                        <img class="preview__img-data" src="<%=require('/src/assets/t500/grey1.png')%>" alt="t500">
                     </div>
                     <div class="preview__data">
 
@@ -582,15 +571,15 @@
                             </svg>
                         </div>
 
-                        <button class="preview__data-btn btn-orange" data-model="t500" id="modalBtn">
+                        <button class="preview__data-btn btn-orange open-modal-btn" data-model="t500">
                             Узнать стоимость по акции
                             <img src="<%=require('/src/assets/ui/arrow-small-black.svg')%>" alt="arrow">
                         </button>
-                        <button class="preview__data-btn btn-black" id="modalBtn" data-model="t500">
+                        <button class="preview__data-btn btn-black open-modal-btn" data-model="t500">
                             Тест-драйв
                             <img src="<%=require('/src/assets/ui/arrow-small-white.svg')%>" alt="arrow">
                         </button>
-                        <button class="preview__data-btn btn-black" id="modalBtn" data-model="t500">
+                        <button class="preview__data-btn btn-black open-modal-btn" data-model="t500">
                             Рассчитать кредит
                             <img src="<%=require('/src/assets/ui/arrow-small-white.svg')%>" alt="arrow">
                         </button>
@@ -654,9 +643,7 @@
                     <ul class="preview__gallery">
                         <li class="preview__gallery-item">
                             <picture>
-                                <source class="preview__gallery-img" type="image/webp"
-                                    srcset="<%=require('/src/assets/t500/preview1.webp')%>" data-index="preview1"
-                                    alt="500">
+                                <source type="image/webp" srcset="<%=require('/src/assets/t500/preview1.webp')%>">
                                 <img class="preview__gallery-img" src="<%=require('/src/assets/t500/preview1.png')%>"
                                     data-index="preview1" alt="500" loading="lazy">
                             </picture>
@@ -664,36 +651,28 @@
                         </li>
                         <li class="preview__gallery-item">
                             <picture>
-                                <source class="preview__gallery-img" type="image/webp"
-                                    srcset="<%=require('/src/assets/t500/preview2.webp')%>" data-index="preview2"
-                                    alt="500">
+                                <source type="image/webp" srcset="<%=require('/src/assets/t500/preview2.webp')%>">
                                 <img class="preview__gallery-img" src="<%=require('/src/assets/t500/preview2.png')%>"
                                     data-index="preview2" alt="500" loading="lazy">
                             </picture>
                         </li>
                         <li class="preview__gallery-item">
                             <picture>
-                                <source class="preview__gallery-img" type="image/webp"
-                                    srcset="<%=require('/src/assets/t500/preview3.webp')%>" data-index="preview3"
-                                    alt="500">
+                                <source type="image/webp" srcset="<%=require('/src/assets/t500/preview3.webp')%>">
                                 <img class="preview__gallery-img" src="<%=require('/src/assets/t500/preview3.png')%>"
                                     data-index="preview3" alt="500" loading="lazy">
                             </picture>
                         </li>
                         <li class="preview__gallery-item">
                             <picture>
-                                <source class="preview__gallery-img" type="image/webp"
-                                    srcset="<%=require('/src/assets/t500/preview4.webp')%>" data-index="preview4"
-                                    alt="500">
+                                <source type="image/webp" srcset="<%=require('/src/assets/t500/preview4.webp')%>">
                                 <img class="preview__gallery-img" src="<%=require('/src/assets/t500/preview4.png')%>"
                                     data-index="preview4" alt="500" loading="lazy">
                             </picture>
                         </li>
                         <li class="preview__gallery-item">
                             <picture>
-                                <source class="preview__gallery-img" type="image/webp"
-                                    srcset="<%=require('/src/assets/t500/preview5.webp')%>" data-index="preview5"
-                                    alt="500">
+                                <source type="image/webp" srcset="<%=require('/src/assets/t500/preview5.webp')%>">
                                 <img class="preview__gallery-img" src="<%=require('/src/assets/t500/preview5.png')%>"
                                     data-index="preview5" alt="500" loading="lazy">
                             </picture>
@@ -710,7 +689,7 @@
                     <div class="selection__content-option select">
                         <label class="selection__content-option-name select-name" for="select-300-model">Модель</label>
                         <select name="model" id="select-300-model" aria-label="select model">
-                            <option value="" disabled="disabled" selected="selected" hidden=""></option>
+                            <option value="" disabled="disabled" selected="selected" hidden="">&nbsp;</option>
                             <option value="t300">T300</option>
                             <option value="t500">T500</option>
                         </select>
@@ -719,7 +698,7 @@
                         <label class="selection__content-option-name select-name"
                             for="select-300-equipment">Комплектация</label>
                         <select name="equipment" id="select-300-equipment" aria-label="select equpment">
-                            <option value="" disabled="disabled" selected="selected" hidden=""></option>
+                            <option value="" disabled="disabled" selected="selected" hidden="">&nbsp;</option>
                             <option value="full">Full</option>
                             <option value="notFull">Not full</option>
                         </select>
@@ -728,7 +707,7 @@
                         <label class="selection__content-option-name select-name"
                             for="select-300-engine">Двигатель</label>
                         <select name="engine" id="select-300-engine" aria-label="select engine">
-                            <option value="" disabled="disabled" selected="selected" hidden=""></option>
+                            <option value="" disabled="disabled" selected="selected" hidden="">&nbsp;</option>
                             <option value="2.0">2.0</option>
                             <option value="2.5">2.5</option>
                             <option value="3.5">3.5</option>
@@ -747,14 +726,14 @@
                 <div class="tradeIn__content-img">
                     <picture>
 
-                        <source type="image/webp" srcset="<%=require('/src/assets/tradeIn.webp')%>" loading="lazy">
+                        <source type="image/webp" srcset="<%=require('/src/assets/tradeIn.webp')%>">
                         <img class="tradeIn__content-img" src="<%=require('/src/assets/tradeIn.png')%>" loading="lazy"
                             alt="tradeIn">
                     </picture>
                 </div>
                 <h2 class="tradeIn__content-text">ОБМЕН ПО TRADE-IN
                     НА ВЫГОДНЫХ УСЛОВИЯХ</h2>
-                <button class="tradeIn__content-btn btn-orange" id="modalBtn">
+                <button class="tradeIn__content-btn btn-orange open-modal-btn">
                     Отправить заявку
 
                     <img src="<%=require('/src/assets/ui/arrow-small-black.svg')%>" alt="arrow">
@@ -765,11 +744,11 @@
             <!--   -->
             <picture>
                 <source class="call__img" media="(min-width:801px )" type="image/webp"
-                    srcset="<%=require('/src/assets/call.webp')%>" loading="lazy">
+                    srcset="<%=require('/src/assets/call.webp')%>">
                 <source class="call__img" media="(max-width:800px )" type="image/webp"
-                    srcset="<%=require('/src/assets/call-mobile.webp')%>" loading="lazy">
+                    srcset="<%=require('/src/assets/call-mobile.webp')%>">
                 <source class="call__img" media="(max-width:800px )" type="image/png"
-                    srcset="<%=require('/src/assets/call-mobile.png')%>" loading="lazy">
+                    srcset="<%=require('/src/assets/call-mobile.png')%>">
                 <img class="call__img" src="<%=require('/src/assets/call.png')%>" loading="lazy" alt="bg">
             </picture>
             <div class="call__content container">
@@ -803,7 +782,7 @@
                     для корпоративных клиентов</h2>
                 <div class="offer__content-woman">
                     <picture class="offer__content-woman-img">
-                        <source type="image/webp" srcset="<%=require('/src/assets/offer.webp')%>" loading="lazy">
+                        <source type="image/webp" srcset="<%=require('/src/assets/offer.webp')%>">
                         <img src="<%=require('/src/assets/offer.png')%>" loading="lazy" alt="woman">
 
                     </picture>
@@ -819,7 +798,7 @@
                         <p class="offer__content-joke-text" id="joke4">пошел нахуй ...</p>
                     </div>
                 </div>
-                <button class="call__content-form-btn btn-orange" id="modalBtn">
+                <button class="call__content-form-btn btn-orange open-modal-btn">
                     Отправить заявку
                     <img src="<%=require('/src/assets/ui/arrow-small-black.svg')%>" alt="arrow">
                 </button>
@@ -829,10 +808,17 @@
         <section class="map" id="map">
             <div class="map__content container">
 
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.620941%2C55.753575&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIwNjMzMDI1EjnQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0JrRgNCw0YHQvdCw0Y8g0L_Qu9C-0YnQsNC00YwiCg0dfBZCFaIDX0I%2C&z=17.55"
-                    width="100%" height="100%" frameborder="1" allowfullscreen="true"
-                    style="position:relative;"></iframe>
+                <div class="map__content-container">
+                    <picture>
+                        <source type="image/webp" srcset="<%=require('/src/assets/map.webp')%>">
+                        <img class="map__content-container-img" src="<%=require('/src/assets/map.png')%>" alt="map img">
+                    </picture>
+                    <iframe
+                    class="map__content-container-iframe"
+                        src="#"
+                        width="100" height="100" allowfullscreen></iframe>
+                </div>
+
 
                 <div class="map__content-infos">
                     <div class="map__content-info">
@@ -856,7 +842,7 @@
                     </div>
 
 
-                    <button class="map__content-form-btn btn-orange" id="modalBtn">
+                    <button class="map__content-form-btn btn-orange open-modal-btn">
                         Заказать звонок
                         <img src="<%=require('/src/assets/ui/arrow-small-black.svg')%>" alt="arrow">
                     </button>

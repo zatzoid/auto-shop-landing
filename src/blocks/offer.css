@@ -48,7 +48,7 @@
 }
 
 .offer__content-head {
-    font-family: TT TANK;
+    
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -74,10 +74,16 @@
     height: 140px;
     grid-row: 1 / span 2;
     border-radius: 50%;
+    overflow: hidden;
+}
+.offer__content-woman-img img,
+.offer__content-woman-img  source{
+    width: 100%;
+    height: 100%;
 }
 
 .offer__content-woman-head {
-    font-family: TT TANK;
+    
     font-size: 24px;
     font-weight: 700;
     line-height: 28.8px;
@@ -87,7 +93,7 @@
 }
 
 .offer__content-woman-body {
-    font-family: TT TANK;
+    
     font-size: 16px;
     font-weight: 300;
     line-height: 22.4px;
@@ -104,7 +110,7 @@
 
 .offer__content-joke-text {
     position: absolute;
-    font-family: TT TANK;
+    
     font-size: 24px;
     font-weight: 700;
     line-height: 28.8px;

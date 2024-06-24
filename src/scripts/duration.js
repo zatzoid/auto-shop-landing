@@ -67,10 +67,12 @@ const millisInMinute = millisInSecond * 60;
 const millisInHour = millisInMinute * 60;
 const millisInDay = millisInHour * 24;
 
-
-createCanas(1719403200763);
+const targetDateSumm = (24 * 60 * 60 * 1000) + (1 * 60 * 1000) + (30 * 1000)
+const targetCurrentDate = new Date().getTime();
+const targetDateVal = targetCurrentDate + targetDateSumm
+createCanas(targetDateVal);
 setInterval(() => {
-    createCanas(1719403200763);
+    createCanas(targetDateVal);
 }, 1000);
 
 function createCanas(targetDate){

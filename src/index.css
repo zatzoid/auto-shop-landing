@@ -29,10 +29,12 @@ body {
     --col-orange-hover: #FE8630;
     --col-black-hover: #383838;
     --col-green: #00D154;
-    --col-red: #FF2B00;
+    --col-red: #be2b0e;
     --max-width: 1300px;
     background-color: var(--col-black);
     color: var(--col-white);
+    font-family: TT TANK, sans-serif;
+    font-display: swap;
 
 }
 .blockScroll{

@@ -29,7 +29,7 @@
 }
 
 .advantages__list-item-text {
-    font-family: TT TANK;
+    
     font-size: 20px;
     font-weight: 700;
     line-height: 22px;
@@ -38,7 +38,7 @@
 }
 
 .advantages__list-item-text:last-of-type {
-    font-family: TT TANK;
+    
     font-size: 16px;
     font-weight: 300;
     line-height: 19.2px;

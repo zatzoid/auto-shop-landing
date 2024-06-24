@@ -69,7 +69,7 @@
 }
 
 .preview__data-only {
-    font-family: TT TANK;
+    
     font-size: 20px;
     font-weight: 500;
     line-height: 22px;
@@ -78,7 +78,7 @@
 }
 
 .preview__data-name {
-    font-family: TT TANK;
+    
     font-size: 40px;
     font-weight: 700;
     line-height: 44px;
@@ -89,7 +89,7 @@
 
 
 .preview__data-text {
-    font-family: TT TANK;
+    
     font-size: 30px;
     font-weight: 500;
     line-height: 33px;
@@ -111,7 +111,7 @@
 }
 
 .preview__data-warning-text {
-    font-family: TT TANK;
+    
     font-size: 14px;
     font-weight: 500;
     line-height: 15.4px;
@@ -149,24 +149,24 @@
     border: 1px solid transparent;
 }
 
-.preview__img-color-label#red300 {
+.preview__img-color-label#color-red300 {
     background-color: var(--col-red);
 }
 
-.preview__img-color-label#orange300 {
+.preview__img-color-label#color-orange300 {
     background-color: var(--col-orange);
 }
 
-.preview__img-color-label#grey300 {
+.preview__img-color-label#color-grey300 {
     background-color: var(--col-grey);
 }
 
-.preview__img-color-label#black300 {
+.preview__img-color-label#color-black300 {
     background-color: var(--col-black);
     border: 1px solid var(--col-grey);
 }
 
-.preview__img-color-label#white300 {
+.preview__img-color-label#color-white300 {
     background-color: var(--col-white);
 }
 
@@ -174,19 +174,19 @@
     border: 1px solid var(--col-white);
 }
 /* 500 */
-.preview__img-color-label#grey1500 {
+.preview__img-color-label#color-grey1500 {
     background-color:#B0A798;
 }
 
-.preview__img-color-label#grey2500 {
+.preview__img-color-label#color-grey2500 {
     background-color: #E6E7E8;
 }
 
-.preview__img-color-label#grey3500 {
+.preview__img-color-label#color-grey3500 {
     background-color: #A2A4AB;
 }
 
-.preview__img-color-label#black500 {
+.preview__img-color-label#color-black500 {
     background-color: var(--col-black);
     border: 1px solid var(--col-grey);
 }
@@ -238,7 +238,7 @@
 }
 
 .preview__advantages-item-text {
-    font-family: TT TANK;
+    
     font-size: 16px;
     font-weight: 500;
     line-height: 17.6px;

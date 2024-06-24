@@ -28,7 +28,7 @@
 
 
 .header__top-link {
-    font-family: TT TANK;
+   
     font-size: 14px;
     font-weight: 500;
     line-height: 15.4px;
@@ -71,7 +71,7 @@
     text-wrap: nowrap;
     border-left: 1px solid var(--col-grey);
     padding-left: 20px;
-    font-family: TT TANK;
+   
     font-size: 18px;
     font-weight: 300;
     line-height: 19.8px;
@@ -84,7 +84,7 @@
     max-width: 240px;
     border: none;
     padding: 0;
-    font-family: TT TANK;
+   
     font-size: 30px;
     font-weight: 700;
     line-height: 33px;
@@ -102,7 +102,7 @@
 }
 
 .header__bottom-phone-number {
-    font-family: TT TANK;
+   
     font-size: 20px;
     font-weight: 500;
     line-height: 22px;
@@ -111,7 +111,7 @@
 }
 
 .header__botton-phone-online {
-    font-family: TT TANK;
+   
     font-size: 14px;
     font-weight: 300;
     line-height: 15.4px;

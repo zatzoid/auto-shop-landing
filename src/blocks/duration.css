@@ -15,7 +15,7 @@
 
 
 .duration__content-head {
-    font-family: TT TANK;
+    
     font-size: 30px;
     font-weight: 700;
     line-height: 33px;
@@ -32,7 +32,7 @@
 
 .duration__content-timer-dot {
 
-    font-family: TT TANK;
+    
     font-size: 39px;
     font-weight: 700;
     line-height: 49.14px;
@@ -53,7 +53,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: min-content;
-    font-family: TT TANK;
+    
     font-size: 12px;
     font-weight: 300;
     line-height: 13.2px;
@@ -63,7 +63,7 @@
 }
 
 .duration__content-timer-data-text span {
-    font-family: TT TANK;
+    
     font-size: 34px;
     font-weight: 700;
     line-height: 42.84px;

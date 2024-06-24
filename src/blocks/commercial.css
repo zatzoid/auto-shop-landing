@@ -3,7 +3,7 @@
 .container {}
 
 .commercial__heading {
-    font-family: TT TANK;
+
     font-size: 40px;
     font-weight: 700;
     line-height: 44px;
@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
-    font-family: TT TANK;
     font-size: 16px;
     font-weight: 500;
     line-height: 17.6px;
@@ -38,8 +37,9 @@
 }
 
 .comercial__links a img {
-    width: 196px;
-    height: 111px;
+    max-width: 196px;
+    max-height: 111px;
+ 
 }
 
 @media screen and (max-width: 800px) {
@@ -48,11 +48,13 @@
         line-height: 30.8px;
 
     }
-    .comercial__links a{
+
+    .comercial__links a {
         width: 140px;
         height: 80px;
     }
-    .comercial__links a img{
+
+    .comercial__links a img {
         max-width: 100%;
         max-height: 100%;
     }

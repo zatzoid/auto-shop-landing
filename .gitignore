@@ -2,3 +2,16 @@ build
 node_modules
 *.fig
 *.txt
+/src/assets/*.png
+/src/assets/*.webp
+
+/src/assets/t300/*.png
+/src/assets/t300/*.webp
+
+/src/assets/t500/*.png
+/src/assets/t500/*.webp
+
+/src/assets/t300/*.png
+/src/assets/ui/*.svg
+
+

@@ -7,7 +7,7 @@ class Modal {
     constructor(modalSelector, openBtnSelector, dynamicContainer) {
         this._modalDom = $(modalSelector);
         this._openModalBtnSelector = openBtnSelector
-        this._openModalBtns = document.querySelectorAll(openBtnSelector);
+        this._openModalBtns = document.querySelectorAll('.'+openBtnSelector);
         this._dynamicContainer = $(dynamicContainer);
         this._selectModel = this._modalDom.find('#select-model')
         this._selectEquipment = this._modalDom.find('#select-equipment')
@@ -67,7 +67,9 @@ class Modal {
         this._modalDom.on('click', (evt) => this._closeModal(evt))
 
         this._dynamicContainer.on('click', (evt) => {
-            if (this._openModalBtnSelector.includes($(evt.target).attr('id'))) {
+            evt.preventDefault()
+            if ($(evt.target).hasClass(this._openModalBtnSelector)) {
+                console.log('open');
                 this._openModal(evt)
             }
         })
@@ -80,5 +82,5 @@ class Modal {
 
 }
 
-const modal = new Modal('.modal', '.open-modal-btn', '.selection__cards')
+const modal = new Modal('.modal', 'open-modal-btn', '.selection__cards')
 modal.activateModal()
